@@ -67,8 +67,18 @@
                         <layer>ee-core-profile-server</layer>
                     </layers>
                     <excluded-layers>
-                        <!--                        <layer>deployment-scanner</layer>-->
+<!--                        <layer>deployment-scanner</layer>-->
                     </excluded-layers>
+                    <cli-sessions>
+                        <cli-session>
+                            <script-files>
+                                <script>scripts/configure-jwt.cli</script>
+                            </script-files>
+                        </cli-session>
+                    </cli-sessions>
+                    <extra-server-content-dirs>
+                        <extra-content>extra-content</extra-content>
+                    </extra-server-content-dirs>
                 </configuration>
                 <executions>
                     <execution>
@@ -90,6 +100,13 @@
             <artifactId>jakarta.jakartaee-api</artifactId>
             <version>10.0.0</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- JWT -->
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>9.37.1</version>
         </dependency>
 
     </dependencies>
