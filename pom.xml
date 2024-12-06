@@ -102,6 +102,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- JBoss Logging -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- JWT -->
         <dependency>
             <groupId>com.nimbusds</groupId>
