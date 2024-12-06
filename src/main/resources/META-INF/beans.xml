@@ -8,4 +8,8 @@
 <!--        <class>com.example.extra.service.AlternativeGreetingService</class>-->
     </alternatives>
 
+    <decorators>
+<!--        <class>com.example.extra.service.GreetingDecorator</class>-->
+    </decorators>
+
 </beans>
